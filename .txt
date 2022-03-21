@@ -1,0 +1,4 @@
+Phân công nhiệm vụ:
+	+Nguyễn thị tươi: Contact, Blog.
+	+Nguyễn văn duy: Home, Gallery, Reserration.
+	+Nguyễn ngọc yến nhi: Menu, Pages.
