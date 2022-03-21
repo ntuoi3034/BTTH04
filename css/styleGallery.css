@@ -1,0 +1,21 @@
+.breadcumb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    top: 0;
+    left: 0;
+}
+.dom-img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.dom-img:hover{
+    opacity: 0.8;
+}
+.disappears{
+    display: none;
+}
+    

@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D'Bento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/styleHome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="contaner" style=" width: 100%;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black heading">
+      <div class="container-fluid" style="height: 60px">
+        <a class="navbar-brand DBento" href="#" style="color: white">D'Bento</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="header">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="
+                  font-weight: 700;
+                  letter-spacing: 0.3px;
+                  text-transform: uppercase;
+                ">
+              <li class="nav-item hover-header">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin: 0 20px">Home</a>
+              </li>
+              <li class="nav-item dropdown pages">
+                <a class="nav-link dropdown-toggle hover-header" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="color: white; margin: 0 20px">
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black">
+                  <li>
+                    <a class="dropdown-item menu-drop" href="#" style="color: white">About</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" style="color: #fff" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item menu-drop" href="#" style="color: white">Terms & Privacy</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item hover-header">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white; margin: 0 20px">Menu</a>
+              </li>
+              <li class="nav-item hover-header">
+                <a class="nav-link active" aria-current="page" href="/gallery.html" style="color: white; margin: 0 20px">Gallery</a>
+              </li>
+              <li class="nav-item hover-header">
+                <a class="nav-link active" aria-current="page" href="blog.html" style="color: white; margin: 0 20px">Blog</a>
+              </li>
+              <li class="nav-item hover-header">
+                <a class="nav-link active" aria-current="page" href="contact.html" style="color: white; margin: 0 20px">Contact</a>
+              </li>
+              <button onclick=Reservation() type="button" class="btn btn-primary btn-lg Reservation" style="
+                    height: 36px;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                  ">
+                Reservation
+              </button>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-group dropstart" style="display: inline-block; margin-right: 6%">
+          <i onclick=Our_menu() style="color: #fff; font-size: 25px; cursor: pointer;" class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- Slide show -->
+    <div class="font-family">
+      <div id="carouselExampleCaptions" class="carousel slide slidershow" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/imagesHome/slide1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block" style="margin-bottom: 20%">
+              <h5 style="font-size: 40px;">We Serve Quality Food</h5>
+              <div class="para">
+                <p style="font-size: 16px">
+                  D'BENTO is restaurant, bar and coffee roasterylocated on Italy.
+                  We have awesome recipes and the most talented chefs in town!
+                </p>
+              </div>
+              <button type="button" class="btn btn-warning viewmore" style="
+                  margin-top: 20px;
+                  background-color: #af872f;
+                  height: 41px;
+                  width: 155px;
+                  border-radius: 0;
+                  color: #fff;
+                ">
+                More Detail
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/imagesHome/slide2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block" style="margin-bottom: 20%">
+              <h5 style="font-size: 40px">Hot And Ready To Serve</h5>
+              <div class="para">
+                <p style="font-size: 16px">
+                  D'BENTO is restaurant, bar and coffee roasterylocated on Italy.
+                  We have awesome recipes and the most talented chefs in town!
+                </p>
+              </div>
+              <button type="button" class="btn btn-warning viewmore" style="
+                  margin-top: 20px;
+                  background-color: #af872f;
+                  height: 41px;
+                  width: 155px;
+                  border-radius: 0;
+                  color: #fff;
+                ">
+                More Detail
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/imagesHome/slide3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block" style="margin-bottom: 20%">
+              <h5 style="font-size: 40px">The Best Tasting Experience</h5>
+              <div class="para">
+                <p style="font-size: 16px">
+                  D'BENTO is restaurant, bar and coffee roasterylocated on Italy.
+                  We have awesome recipes and the most talented chefs in town!
+                </p>
+              </div>
+              <button type="button" class="btn btn-warning viewmore" style="
+                  margin-top: 20px;
+                  background-color: #af872f;
+                  height: 41px;
+                  width: 155px;
+                  border-radius: 0;
+                  color: #fff;
+                ">
+                More Detail
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- greeting -->
+      <div class="container-fluid" style="margin-bottom: 100px">
+        <div class="row">
+          <div class="col-md-12" style="text-align: center">
+            <h3 style="font-size: 50px; margin-top: 70px">Welcome to D'Bento</h3>
+            <h4 style="color: orange">꧁༺༻꧂</h4>
+            <div class="para-greeting">
+              <p style="margin-top: 70px; font-size: 18px">
+                D'bento was the first restaurant to open in Italy, the restaurant
+                was designed with the history in mind we have created a soft
+                industrial dining room, combined with an open kitchen, coffee take
+                out bar and on site coffee roastery.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 200px;
+            max-width: 1686px;
+          ">
+          <div class="col-md-4" style="width: 33%; height: 530px;">
+            <div class="card">
+              <img src="/images/imagesHome/home-1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 29px">
+                  Daily New Fresh Menus
+                </h5>
+                <p class="card-text" style="font-size: 18px">
+                  D'bento help you treat yourself with a different meal everyday,
+                  thanks to our daily changing menus and our awesomew creative
+                  chefs!
+                </p>
+                <button class="btn btn-primary viewmore" style="
+                    background-color: #af872f;
+                    border: none;
+                    border-radius: 0;
+                  ">View More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" style="width: 33%; height: 530px">
+            <div class="card">
+              <img src="/images/imagesHome/home-2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 29px">
+                  Fresh Ingredient, Tasty Meals
+                </h5>
+                <p class="card-text" style="font-size: 18px">
+                  Who said healthy food can't also be delicious? D'bento creative
+                  chefs use fresh and seasonal ingredients to make affordable.
+                </p>
+                <button class="btn btn-primary viewmore" style="
+                    background-color: #af872f;
+                    border: none;
+                    border-radius: 0;
+                  ">View More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" style="width: 33%; height: 530px">
+            <div class="card">
+              <img src="/images/imagesHome/home-3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 29px">
+                  Creative & Talented Chefs
+                </h5>
+                <p class="card-text" style="font-size: 18px">
+                  D'bento have offered a team of culinary professionals that make
+                  delectable dishes at memorable events for both private client.
+                </p>
+                <button class="btn btn-primary viewmore" style="
+                    background-color: #af872f;
+                    border: none;
+                    border-radius: 0;
+                  ">View More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Check Our Daily Specials -->
+      <section aria-label="section" class="s-img s-bot" style="background-image: linear-gradient(0, rgba(67,67,67,.9), rgba(67,67,67,.9)),
+        url(/images/imagesHome/background-image.png);
+        height: 1125px;">
+        <div class="container-fluid bgi">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 style="
+                  color: #fff;
+                  margin-top: 100px;
+                  font-size: 53px;
+                  text-align: center;
+                ">
+                Check Our Daily Specials
+              </h3>
+              <h4 style="color: orange; text-align: center; font-size: 30px;">꧁༺༻꧂</h4>
+            </div>
+          </div>
+          <div class="row menu-special" style="margin-top: 50px;">
+            <div class="col-md-12" style="text-align: center; margin-top: 80px;">
+              <div class="row" style="height: 187px; width: 945; margin: 0 auto;">
+                <div class="col-md-12">
+                  <h3 style="color: #a79c39; font-size: 32px;">$35.64</h3>
+                  <h3 style="font-size: 37px;">Crispy Shrimp and Grits</h3>
+                  <p style="height: 51px; width: 600px; margin: 0 auto;">
+                    Beer battered jumbo shrimp served with chispy cheddar grit polenta, corn and tomato salsa and old
+                    bay
+                    remoulade.
+                  </p>
+                  <img alt="Bootstrap Image Preview" src="/images/imagesHome/line.png" />
+                </div>
+              </div>
+              <div class="row" style="height: 187px; width: 945; margin: 0 auto;">
+                <div class="col-md-12">
+                  <h3 style="color: #a79c39; font-size: 32px;">$25.75</h3>
+                  <h3 style="font-size: 37px;">Pizza Grilled Quesadilla</h3>
+                  <p>
+                    A pizza grilled with quesadilla, fresh cilanto, red cabage, tomato sauce, with mozarella. Hot &
+                    ready to
+                    serve.
+                  </p style="height: 51px; width: 600px; margin: 0 auto;">
+                  <img alt="Bootstrap Image Preview" src="/images/imagesHome/line.png" />
+                </div>
+              </div>
+              <div class="row" style="height: 187px; width: 945; margin: 0 auto;">
+                <div class="col-md-12">
+                  <h3 style="color: #a79c39; font-size: 32px;">$28.35</h3>
+                  <h3 style="font-size: 37px;">Chesapeake Crab and Artichoke Dip</h3>
+                  <p style="height: 51px; width: 600px; margin: 0 auto;">
+                    Cream chesapeake crab dip and artichoke, baked and topped with cheddar cheese served crusty bread
+                    for
+                    diving.
+                  </p>
+                  <img alt="Bootstrap Image Preview" src="/images/imagesHome/line.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Discover Our Menu -->
+      
+      <div class="container-fluid" style="padding-bottom: 50px;">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 style="font-size: 53px; text-align: center; margin-top: 100px;">
+                      Discover Our Menu
+                    </h3>
+                    <h4 style="color: orange; text-align: center; font-size: 30px; margin-bottom: 50px;">꧁༺༻꧂</h4>
+                    <p
+                      style="font-size: 17px; margin: 0 auto; height: 60px; width: 710px; max-width: 700px; text-align: center; font-weight: 400;">
+                      Everyone has taste, even if they don't realize it. Even if you're not a great chef, there's
+                      nothing to
+                      stop you understanding the difference between what tastes good and what doesn't.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="dish">
+          <ul class="list">
+            <li><button class="dish-active" id="dish-all" onclick="All()">All</button></li>
+            <li><button id="dish-lunch" onclick="Lunch()">Lunch</button></li>
+            <li><button id="dish-dinner" onclick="Dinner()">Dinner</button></li>
+            <li><button id="dish-dessert" onclick="Dessert()">Dessert</button></li>
+            <li><button id="dish-main" onclick="Main()">Main</button></li>
+          </ul>
+        </div>
+        <section class="row bgi-img" style="background-image: url(/images/imagesGallery/background-img2.png); max-height: 1050px; padding-bottom: 50px;">
+          <!-- All -->
+          <div class="container-fluid " id="all" style="margin-top: -50px; ">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12" style="max-width: 1180px; width: 80%; margin: 0 auto;">
+                    <div class="row">
+                      <div class="col-md-4" style="background-color: #e9e9e9; text-align: center; width: 393px;">
+                        <h3 style="font-size: 20px; color: #a79c39; margin-top: 30px;">$24.64</h3>
+                        <h3 style="font-size: 18px;">Crispy Shrimp and Grits</h3>
+                        <img style="width: 50%;" alt="Bootstrap Image Preview" src="/images/imagesHome/line1.png" />
+                        <p style="font-size: 18px; font-weight: 400;">
+                          Pork Fillet, ginger, garlic, honey, pepper & canola oil creamy chesapeake crab dip with
+                          artichoke, baked and topped with cheddar cheese, with crusty bread for dipping, creamy
+                          chesapeake crab dip with artichoke, grill and baked with beef sausage.
+                        </p>
+                        <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom2.jpg" />
+                      </div>
+                      <div class="col-md-4" style="background-color: #e9e9e9; text-align: center; width: 393px;">
+                        <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom1.jpg" />
+                        <h3 style="font-size: 20px; color: #a79c39; margin-top: 30px;">$22.45</h3>
+                        <h3 style="font-size: 18px;">Bread Grill Chicken Sauce</h3>
+                        <img alt="Bootstrap Image Preview" src="/images/imagesHome/line1.png" />
+                        <p style="font-size: 18px; font-weight: 400;">
+                          Pork Fillet, ginger, garlic, honey, pepper & canola oil creamy chesapeake crab dip with
+                          artichoke, baked and topped with cheddar cheese, with crusty bread for dipping, creamy
+                          chesapeake crab dip with artichoke, grill and baked with beef sausage.
+                        </p>
+                      </div>
+                      <div class="col-md-4" style="background-color: #e9e9e9; text-align: center; width: 393px;">
+                        <h3 style="font-size: 20px; color: #a79c39; margin-top: 30px;">$27.25</h3>
+                        <h3 style="font-size: 18px;">Bread Grill Chicken Sauce</h3>
+                        <img alt="Bootstrap Image Preview" src="/images/imagesHome/line1.png" />
+                        <p style="font-size: 18px; font-weight: 400;">
+                          Pork Fillet, ginger, garlic, honey, pepper & canola oil creamy chesapeake crab dip with
+                          artichoke, baked and topped with cheddar cheese, with crusty bread for dipping, creamy
+                          chesapeake crab dip with artichoke, grill and baked with beef sausage.
+                        </p>
+                        <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom3.jpg" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4" style="background-color: #e9e9e9; text-align: center; width: 393px;">
+                        <h3 style="font-size: 20px; color: #a79c39; margin-top: 30px;">$21.78</h3>
+                        <h3 style="font-size: 18px;">Meatball with Canola Oil</h3>
+                        <img alt="Bootstrap Image Preview" src="/images/imagesHome/line1.png" />
+                        <p style="font-size: 18px; font-weight: 400;">
+                          Pork Fillet, ginger, garlic, honey, pepper & canola oil creamy chesapeake crab dip with
+                          artichoke, baked and topped with cheddar cheese, with crusty bread for dipping, creamy
+                          chesapeake crab dip with artichoke, grill and baked with beef sausage.
+                        </p>
+                        <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom5.jpg" />
+                      </div>
+                      <div class="col-md-4" style="background-color: #e9e9e9; text-align: center; width: 393px;">
+                        <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom4.jpg" />
+                        <h3 style="font-size: 20px; color: #a79c39; margin-top: 30px;">$24.45</h3>
+                        <h3 style="font-size: 18px;">Crispy Salad and Bread</h3>
+                        <img alt="Bootstrap Image Preview" src="/images/imagesHome/line1.png" />
+                        <p style="font-size: 18px; font-weight: 400;">
+                          Pork Fillet, ginger, garlic, honey, pepper & canola oil creamy chesapeake crab dip with
+                          artichoke, baked and topped with cheddar cheese, with crusty bread for dipping, creamy
+                          chesapeake crab dip with artichoke, grill and baked with beef sausage.
+                        </p>
+                      </div>
+                      <div class="col-md-4" style="background-color: #e9e9e9; text-align: center; width: 393px;">
+                        <h3 style="font-size: 20px; color: #a79c39; margin-top: 30px;">$23.20</h3>
+                        <h3 style="font-size: 18px;">Pecel with Peanut</h3>
+                        <img alt="Bootstrap Image Preview" src="/images/imagesHome/line1.png" />
+                        <p style="font-size: 18px; font-weight: 400;">
+                          Pork Fillet, ginger, garlic, honey, pepper & canola oil creamy chesapeake crab dip with
+                          artichoke, baked and topped with cheddar cheese, with crusty bread for dipping, creamy
+                          chesapeake crab dip with artichoke, grill and baked with beef sausage.
+                        </p>
+                        <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom6.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <!-- Lunch -->
+          
+              <div class="col-md-12 disappears" id="lunch" style="margin-top: -50px;">
+                <div class="row" style="max-width: 1178px; margin: 0 auto; background-color: #fff;">
+                  <div class="col-md-4">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom1.jpg" />
+                  </div>
+                  <div class="col-md-4">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom3.jpg" />
+                  </div>
+                  <div class="col-md-4">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom4.jpg" />
+                  </div>
+                </div>
+              </div>
+            
+          <!-- Dinner -->
+          <div class="container-fluid disappears" id="dinner" style="margin-top: -50px;">
+            <div class="row" style="max-width: 1176px; margin: 0 auto;">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-4" style="background-color: #fff;">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom1.jpg" />
+                  </div>
+                  <div class="col-md-4" style="background-color: #fff;">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom2.jpg" />
+                  </div>
+                  <div class="col-md-4" style="background-color: #fff;">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom6.jpg" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                  </div>
+                  <div class="col-md-4" style="background-color: #fff;">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom5.jpg" />
+                  </div>
+                  <div class="col-md-4">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dessert -->
+          <div class="container-fluid disappears" id="dessert" style="margin-top: -50px;">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row" style="max-width: 786px; margin: 0 auto; background-color: #fff;">
+                  <div class="col-md-6">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom2.jpg" />
+                  </div>
+                  <div class="col-md-6">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom6.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Main -->
+          <div class="container-fluid disappears" id="main" style="margin-top: -50px;">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row" style="max-width: 1178px; margin: 0 auto; background-color: #fff;">
+                  <div class="col-md-4">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom3.jpg" />
+                  </div>
+                  <div class="col-md-4">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom5.jpg" />
+                  </div>
+                  <div class="col-md-4">
+                    <img class="Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/Dom6.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <div class="row">
+            <div class="col-md-12" style="text-align: center;">
+
+              <button type="button" class="btn btn-success Discover-More"
+                style="margin-top: 5%; background-color: #af872f; border: none; border-radius: 0;">
+                Discover More
+              </button>
+            </div>
+          </div>
+        </div>
+
+      <!-- User -->
+      <section aria-label="section" class="s-img s-bot" style="background-image: linear-gradient(0, rgba(67,67,67,.9), rgba(67,67,67,.9)),
+        url(/images/imagesHome/background-image.png);
+        height: max-content;
+        margin-top: 15%;
+        padding-bottom: 100px;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12" style="text-align: center; margin-top: 70px;">
+              <h3 style="font-size: 53px; color: #fff;">
+                Our Guestbook
+              </h3>
+              <h4 style="color: orange; text-align: center; font-size: 30px; margin-bottom: 50px;">꧁༺༻꧂</h4>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row" style="height: 478px; width: 90%; margin: 0 auto;">
+            <div class="col-md-12">
+              <div class="row" style="justify-content: center;">
+                <div class="col-md-4 user"
+                  style="background-color: #fff; border-radius: 5px; text-align: center; height: 442px; width: 30%;">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3 style="font-size: 80px; color: #af872f; margin-top: 50px;">
+                        "
+                      </h3>
+
+                      <p style="font-size: 18px;">
+                        "The family prices, the great atmosphere are only topped by the delicious food. keep up the
+                        great
+                        work."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="user-img" alt="Bootstrap Image Preview" src="/images/imagesHome/User1.jpg" />
+                      <h6 style="font-size: 18px; font-weight: 600; margin-top: 20px;">
+                        Nguyen Van Duy
+                      </h6>
+                      <h3 style="font-size: 16px; opacity: 0.7;">
+                        Customer
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 user"
+                  style="background-color: #fff; border-radius: 5px; text-align: center; height: 442px; width: 30%; ">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3 style="font-size: 80px; color: #af872f; margin-top: 50px;">
+                        "
+                      </h3>
+                      <p style="font-size: 18px;">
+                        "D'bento is simply the best. Great food, nice atmosphere and very reasonable prices. It just
+                        doesn't
+                        get any better."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="user-img" alt="Bootstrap Image Preview" src="/images/imagesHome/User3.jpg" />
+                      <h6 style="font-size: 18px; font-weight: 600; margin-top: 20px;">
+                        Nguyen Thi Tuoi
+                      </h6>
+                      <h3 style="font-size: 16px; opacity: 0.7;">
+                        Customer
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 user"
+                  style="background-color: #fff; border-radius: 5px; text-align: center; height: 442px; width: 30%;">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3 style="font-size: 80px; color: #af872f; margin-top: 50px;">
+                        "
+                      </h3>
+                      <p style="font-size: 18px;">
+                        "We've been D'bento many times over the years. We know what expect great food awesome prices of
+                        food."
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img class="user-img" alt="Bootstrap Image Preview" src="/images/imagesHome/User2.jpg" />
+                      <h6 style="font-size: 18px; font-weight: 600; margin-top: 20px;">
+                        Nguyen Ngoc Yen Nhi
+                      </h6>
+                      <h3 style="font-size: 16px; opacity: 0.7;">
+                        Customer
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- Our News & Events -->
+      <div class="container-fluid" style="padding: 94px 0;">
+        <div class="row">
+          <div class="col-md-12" style="text-align: center;">
+            <h3 style="font-size: 53px;">
+              Our News & Events
+            </h3>
+            <h4 style="color: orange; text-align: center; font-size: 30px;">꧁༺༻꧂</h4>
+            <p style="padding: 48px 0; max-width: 650px; height: 51px; margin: auto;">
+              Follow our lates news updates to know about our offers, recipes and events. One cannot think well, love
+              well, sleep well, if one has not dined well.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="margin-top: 60px;">
+            <div class="row" style="max-width: 1716px; margin: 0 auto;">
+              <div class="col-md-4">
+                <div class="card">
+
+                  <img src="/images/imagesHome/event1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay date">
+                    <p style="margin: 0 auto; opacity: 1;">Jan 14, 2021</p>
+                  </div>
+                  <div class="card-body" style="text-align: center; background-color: #fcfcfc ;">
+                    <h5 class="card-title" style="font-size: 30px;">Dinner Party for a Chef!</h5>
+                    <p class="card-text" style="font-size: 18px;"> I began my career as a recipe tester for cookbooks,
+                      and I
+                      did that work for two years. I loved cookbooks and loved browsing for them at...</p>
+                    <a href="#" class="btn btn-primary viewmore"
+                      style="border: none; border-radius: 0; background-color: #af872f;max-height: 40px; max-width: 149px; width: 30%;">View
+                      more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+
+                  <img src="/images/imagesHome/event2.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay date">
+                    <p style="margin: 0 auto; opacity: 1;">Feb 04, 2021</p>
+                  </div>
+                  <div class="card-body" style="text-align: center; background-color: #fcfcfc ;">
+                    <h5 class="card-title" style="font-size: 30px;">Great Taste for Breakfast!</h5>
+                    <p class="card-text" style="font-size: 18px;"> I began my career as a recipe tester for cookbooks,
+                      and I did that work for two years. I loved cookbooks and loved browsing for them at...</p>
+                    <a href="#" class="btn btn-primary viewmore"
+                      style="border: none; border-radius: 0; background-color: #af872f;max-height: 40px; max-width: 149px; width: 30%;">View
+                      more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+
+                  <img src="/images/imagesHome/event3.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay date">
+                    <p style="margin: 0 auto; opacity: 1;">March 10, 2021</p>
+                  </div>
+                  <div class="card-body" style="text-align: center; background-color: #fcfcfc ;">
+                    <h5 class="card-title" style="font-size: 30px;">Delicious Fish with Black Sauce</h5>
+                    <p class="card-text" style="font-size: 18px;"> I began my career as a recipe tester for cookbooks,
+                      and I
+                      did that work for two years. I loved cookbooks and loved browsing for them at...</p>
+                    <a href="#" class="btn btn-primary viewmore"
+                      style="border: none; border-radius: 0; background-color: #af872f;max-height: 40px; max-width: 149px; width: 30%;">View
+                      more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+      <section aria-label="section" class="s-img s-bot" style="background-image: linear-gradient(0, rgba(22,22,22,.95), rgba(22,22,22,.95)),
+        url(/images/imagesHome/background-image.png);
+        height: max-content;
+        margin-top: 15%;">
+      <div class="container-fluid">
+        <div class="row" style="padding: 150px 100px; color: #fff; ">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4" style="text-align: center;">
+                <div class="row" style="padding: 10px 0;">
+                  <div class="col-md-12">
+                    <h3 style="font-size: 30px;">
+                      Our Address
+                    </h3>
+                  </div>
+                </div>
+                <div class="row" style="width: 274px; margin: 0 auto; padding: 10px 0;">
+                  <div class="col-md-12">
+                    <p style="opacity: 1; font-size: 16px;">
+                      249 Bueno Porto Building, 2rd floor
+                        La Vista Street, Italy
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <a href="#" style="text-decoration: none; color: #a79c39; font-weight: 700;"> VIEW ON MAP</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid" style="width: 410px; height: 390px; margin-top: -50px;">
+                <div class="row" style="background-color: #101010; width: 360px; height: 390px;">
+                  <div class="col-md-12">
+                    <div class="row" style="width: 300px; height: 390px; margin: auto;">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-12" style="text-align: center; padding: 50px 0 20px 0;">
+                            <h3 style="font-size: 33px;">
+                              Make Reservation
+                            </h3><img alt="Bootstrap Image Preview" src="/images/imagesHome/line3.png" />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row" style="border-bottom: 1px dotted rgba(255,255,255,.1);">
+                              <div class="col-md-5">
+                                <p style="opacity: 1;">Week Days</p>
+                              </div>
+                              <div class="col-md-7">
+                                <p style="opacity: 1;"> 09:00 AM - 21:00 PM</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row" style="border-bottom: 1px dotted rgba(255,255,255,.1);">
+                              <div class="col-md-5">
+                                <p style="opacity: 1; margin-top: 10px;">Saturday</p>
+                              </div>
+                              <div class="col-md-7">
+                                <p style="opacity: 1; margin-top: 10px;">12:00 AM - 00:00 AM</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12" style="border-bottom: 1px dotted rgba(255,255,255,.1);">
+                            <div class="row">
+                              <div class="col-md-5">
+                                <p style="opacity: 1; margin-top: 10px;">Sunday</p>
+                              </div>
+                              <div class="col-md-7">
+                                <p style="opacity: 1; margin-top: 10px;">11:00 AM - 22:00 PM</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        
+                      </div>
+                      <div  class="col-md-12" style="text-align: center; width: 300px; height: 40px;">
+                        <button onclick=Reservation() type="button" class="btn btn-success viewmore" style="border: none; border-radius: 0; 
+                        background-color: #af872f;
+                        width: 157px; height: 40px;">
+                          BOOK NOW
+                        </button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" style="text-align: center;">
+                <div class="row" style="padding: 10px 0;">
+                  <div class="col-md-12">
+                    <h3>
+                      Contact Us
+                    </h3>
+                  </div>
+                </div>
+                <div class="row" style="width: 274px; margin: 0 auto; padding: 10px 0;">
+                  <div class="col-md-12">
+                    <p style="opacity: 1; font-size: 16px;">
+                      Email: enquries@dbento.com
+                      Phone: 04 987654321
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <a href="#" style="text-decoration: none; color: #a79c39; font-weight: 700;">SEND MESSAGE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      
+    </footer>
+    <div class="container-fluid" style="position: relative;
+    font-size: .9rem;
+    font-weight: 400;
+    color: #ddd;
+    background: #101010;
+    padding: 30px 0;
+    margin: auto;
+    z-index: 1;">
+      <div class="row" style="margin: auto; width: 1703px;">
+        <div class="col-md-12" style="margin: auto; width: max-content; height: max-content;">
+          <p style="opacity: 1; font-size: 15px; margin-left: -50px; margin-top: 20px;">Copyright©2021 D'bento All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- Reservation -->
+  <div class="disappears" id="reserve" style="width: 100%; height: 100%; position: fixed;top: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+   background-image: linear-gradient(0,rgba(46, 45, 45, 0.3), rgba(27, 27, 27, 0.3));" onclick="DisReverse()">
+    <div style="background: #fff; width: 600px; height: 500px; position: fixed;top: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1055;
+  margin: auto;" id="reverse-form" onclick="Stop(event)">
+      <div style="text-align: center; padding: 40px 0; height: 120px; width: 568px; margin: 0 auto;">
+        <div onclick="DisReverse()" class="close" style="float: right; margin-top: -30px; font-size: 20px;">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h3 style="font-size: 28px;">
+          Online Reservation
+        </h3>
+        <img src="/images/imagesHome/line.png" alt="">
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12" style="width: 90%; margin: 0 auto;">
+            <div class="row">
+              <div class="col-md-4">
+                <form role="form">
+                  <div class="form-group" style="padding: 16px 0;">
+
+
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name" />
+                  </div>
+                  <div class="form-group" style="padding: 16px 0;">
+
+
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Number of Guest" />
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-4">
+                <form role="form">
+                  <div class="form-group" style="padding: 16px 0;">
+
+
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Phone" />
+                  </div>
+                  <div class="form-group" style="padding: 16px 0;">
+
+
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="09/07/2002" />
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-4">
+                <form role="form">
+                  <div class="form-group" style="padding: 16px 0;">
+
+
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" />
+                  </div>
+                  <div class="form-group" style="padding: 16px 0;">
+
+
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Time" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="width: 90%; margin: 0 auto;">
+          <div class="col-md-12" style="padding: 0;">
+            <input style="width: 100%; padding-bottom: 80px;" type="text" placeholder="Your Message">
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-12" style="width: 90%; margin: 0 auto; text-align: center;">
+            <div>
+              <button style="background-color: #af872f; border: none; border-radius: 0; font-size: 18px; width: 30%;"
+                type="button" class="btn btn-success viewmore">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Our menu -->
+  <div class="disappears" id="our-menu" style="width: 100%; height: 100%; position: fixed;top: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+    background-image: linear-gradient(0,rgba(46, 45, 45, 0.3), rgba(27, 27, 27, 0.3));" onclick="DisOur_menu()">
+    <div style="background: #fff; width: 27%; height: 100%; position: fixed;top: 0; right: 0;
+    bottom: 0;
+    z-index: 1055;
+    margin:0 auto;" id="our-menu-form" onclick="Stop(event)">
+      <div class="container-fluid" style="width: 80%; margin: 0 auto;">
+        <div onclick="DisOur_menu()" class="close" style="float: right; font-size: 40px; margin-right: -40px;">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="row" style="margin: 0 auto; padding-top: 100px;">
+          <div class="col-md-12" style="width: 90%; max-width: 300px; ">
+            <h3 style="font-size: 40px; margin-bottom: 60px; font-weight: 600; opacity: 0.8; padding: 0 17px;">
+              Our Menu
+            </h3>
+          </div>
+        </div>
+        <div class="row" style="width: 90%; margin: 0 auto; ">
+          <div class="col-md-12" style="max-width: 300px; width: 90%; margin: 0 auto;">
+            <div class="row" style="margin: 0 auto;">
+              <div class="col-md-4" style="padding: 0px 10px 10px 0;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM1.jpg" />
+              </div>
+              <div class="col-md-4" style="padding: 0px 10px 10px 0 ;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM2.jpg" />
+              </div>
+              <div class="col-md-4" style="padding: 0px 10px 10px 0 ;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM3.jpg" />
+              </div>
+            </div>
+            <div class="row" style="margin: 0 auto;">
+              <div class="col-md-4" style="padding: 0px 10px 10px 0 ;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM4.jpg" />
+              </div>
+              <div class="col-md-4" style="padding: 0px 10px 10px 0 ;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM5.jpg" />
+              </div>
+              <div class="col-md-4" style="padding: 0px 10px 10px 0 ;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM6.jpg" />
+              </div>
+            </div>
+            <div class="row" style="margin: 0 auto;">
+              <div class="col-md-4" style="padding: 0px 10px 10px 0 ;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM7.jpg" />
+              </div>
+              <div class="col-md-4" style="padding: 0px 10px 10px 0 ;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM8.jpg" />
+              </div>
+              <div class="col-md-4" style="padding: 0px 10px 10px 0;">
+                <img class="our-menu-img Dom-img" alt="Bootstrap Image Preview" src="/images/imagesHome/OM9.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 70px;">
+          <div class="col-md-12" style="width: 90%; margin: 0 auto;">
+            <h3 style="font-size: 40px; margin-bottom: 60px; font-weight: 600; opacity: 0.8; padding: 0 17px;">
+              Share us:
+            </h3>
+          </div>
+        </div>
+        <div class="row"
+          style="width: 90%; max-width: 300px; padding-left: 0 0 0 17px; margin: 0 auto; border-top: 1px solid #000">
+          <div class="col-md-12" style="margin-top: 40px;">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="Social-Network">
+                  <i style="line-height: 40px;" class="fa-brands fa-twitter"></i>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="Social-Network">
+                  <i style="line-height: 40px;" class="fa-brands fa-facebook-f"></i>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="Social-Network">
+                  <i style="line-height: 40px;" class="fa-brands fa-youtube"></i>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="Social-Network">
+                  <i style="line-height: 40px;" class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid " style="width: 35px; height: 35px; position: fixed; right: 0;
+  bottom: 0;
+  z-index: 1050;
+  font-size: 10pt;
+  background: #292929;
+  right: 20px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  bottom: 20px;">
+    <div class="row up">
+      <a href="#">
+      <div class="col-md-12 " >
+        <i style="color:#fff;" class="fa-solid fa-chevron-up"></i>
+      </div>
+    </a>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="/js/Home.js"></script>
+</body>
+
+</html>
