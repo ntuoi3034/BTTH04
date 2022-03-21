@@ -1,0 +1,230 @@
+/* nav bar */
+.pages{
+    font-weight: 400;
+}
+.header{
+    margin: 0 auto;
+}
+
+.heading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.menu-drop:hover{
+    background-color:black;
+    opacity: 0.5;
+}
+
+.DBento{
+    padding-left: 6%;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.3;
+}
+
+.Reservation{
+    border: 2px solid #c79a39 !important;
+    border-radius: 0;   
+    background-color: black !important;
+}
+
+.Reservation:hover{
+    background-color: #c79a39;
+}
+
+.hover-header:hover{
+    opacity: 0.5;
+}
+.viewmore:hover{
+    opacity: 0.5;
+}
+.breadcumb {
+    display: block;
+    background: #191919;
+    padding: 0;
+    height: 460px;
+    background-size: cover;
+    position: relative;
+}
+.breadcumb .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main .bread-title {
+    color:aliceblue;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    display: block;
+}
+.main .bread {
+    color: #fff;
+    text-align: center;
+    padding: 60px 0 0;
+}
+.cover img, .cover a img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.row{
+    padding-top: 80px;
+    padding: 0px-18.5%;
+    margin: 0px-15px;
+}
+.search{
+    border: solid;
+    border-color:#fff;
+}
+.search-input{
+    border: solid;
+    border-color: #fff;
+}
+.search-wrapper{
+    border: solid;
+    border-color:#fff;
+    box-sizing: border-box;
+}
+.col-md-4{
+    padding-left:40px;
+
+}
+h2  a{
+    color:#191919 !important;
+    display:block;
+    font-weight: 1.8rem;
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+.user-post{
+    margin-left:20px;
+    font-size:13px;
+}
+p{
+    padding-top:15px;
+}
+.more{
+    text-decoration: none;
+    color:#fff !important;
+    text-align:center;
+    background:#af7802;
+    line-height:15px;
+    padding:13px 36px;
+    margin-top:30px;
+    font-size:12pt;
+    font-weight:800;
+}
+
+.devider-widget {
+    display:block;
+    border-bottom: 2px solid #af872f;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 60px;
+    text-align: left;
+}
+.pull-left{
+    float:left;
+    margin-right:20px;
+    width:80px;
+    height:65px;
+    object-fit: cover;
+}
+h6 a{
+    color:#191919 !important;
+    text-decoration: none;
+}
+.tags{
+    text-align:center;
+    margin: 5px 5px 15px 0;
+    display: inline-block;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 4px 10px;
+}
+.tags a{
+    text-decoration: none;
+    color:#191919 !important;
+}
+.tags:hover {
+    border: 1px solid #af872f;
+}
+/* .page-link{
+    text-decoration: none;
+    color:#191919 !important;
+    text-align:center;
+    margin: 5px 5px 15px 0; 
+     display: inline-block;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid rgba(0,0,0,.1);
+     padding: 4px 10px;
+}  */
+.btn a{
+    text-decoration: none;
+    color:#191919 !important;
+    margin-bottom:0px;
+} 
+#page-item{
+    background:#af872f;
+}
+.btn{
+    border-radius:0.25rem;
+    border-color:#6f6f6f;
+}
+.btn:hover {
+    border: 1px solid #af872f;
+    background:#af872f;
+}
+.footer{
+    background-image: linear-gradient(0, rgb(19, 18, 18, 0.9) , rgba(19, 18, 18, 0.9)), url(../img/bgfoodicon_blog5.png);
+    width: 100%;
+    height: 600px;
+
+} 
+.row .col-md-6{
+    width: 30%;
+  padding: 100px;
+    color: #fff;
+}
+.card .card-inner p{
+   color: #FFFFFF;
+   border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+   margin-top: 30px;
+}
+.col-md-6 h4{
+    font-weight: 600;
+    font-size: 26px;
+}
+.col-md-6 p{
+    color: #FFFFFF !important;
+    text-align: center;
+   margin-left: auto;
+   margin-top: 30px;
+}
+.col-md-6 a{
+   color: #AF872F;
+    font-weight: 700;
+    font-size: 16px;
+}
+.col-12{
+    background-color: #101010;
+}
+.col-12 p {
+   color: #FFFFFF !important;
+   
+}
