@@ -191,7 +191,7 @@ h6 a{
     background:#af872f;
 }
 .footer{
-    background-image: linear-gradient(0, rgb(19, 18, 18, 0.9) , rgba(19, 18, 18, 0.9)), url(../img/bgfoodicon_blog5.png);
+    background-image: linear-gradient(0, rgb(19, 18, 18, 0.9) , rgba(19, 18, 18, 0.9)), url(../images/images_blog/bgfoodicon_blog5.png);
     width: 100%;
     height: 600px;
 
