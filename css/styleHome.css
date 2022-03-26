@@ -105,10 +105,9 @@ p{
 
 /* Discover Our Menu */
 .Dom-img{
-    max-height: 291px;
-    max-width: 393px;
+    max-height: 100%;
+    max-width: 100%;
     cursor: pointer;
-    margin-left: -11.5px;
 }
 .Dom-img:hover{
     opacity: 0.8;
