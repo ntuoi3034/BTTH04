@@ -332,21 +332,22 @@
             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"
                 style="color:rgb(231, 198, 114)"></i></span>
             <input type="text" class="form-control" placeholder="Your Name" aria-label="Your name"
-              aria-describedby="basic-addon1">
+              aria-describedby="basic-addon1" id="name">
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-envelope"
                 style="color:rgb(226, 193, 114)"></i></span>
-            <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email"
-              aria-describedby="basic-addon1">
+            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email"
+              aria-describedby="basic-addon1" id="email">
           </div>
           <textarea class="form-control" rows="8" placeholder="Your Message" name="message" required></textarea>
-          <div style="padding-top:30px"><button
+          <div style="padding-top:30px"><button onclick="Check_infor()"
               style="background-color: #af872f; border: none; border-radius: 0; font-size: 18px; width: 30%;"
               type="button" class="btn btn-success viewmore">
               Send Now
             </button>
           </div>
+          <div id="error_input" style="margin-top: 10px;"></div>
         </div>
       </div>
     </div>
@@ -393,5 +394,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
     <script src="./js/Home.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html >

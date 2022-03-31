@@ -20,12 +20,12 @@
         <h1 class="form-heading">login D'Bento</h1>
         <div class="form-group">
             <i class="far fa-user"></i>
-            <input type="text" class="form-input" placeholder="User Name">
+            <input type="text" class="form-input" placeholder="User Name" id="name">
         </div>
         <div class="form-group">
             <i class="fas fa-key"></i>
-            <input type="password" class="form-input" placeholder="Password">
-            <div id="eye">
+            <input type="password" class="form-input" placeholder="Password" id="password">
+            <div id="eye" onclick="ShowNHidePass()">
                 <i class="far fa-eye"></i>
             </div>
         </div>
@@ -34,9 +34,13 @@
           <label class="form-check-label" for="flexCheckDefault">
            Remember Me 
           </label>
-          <a href="#">forgot Password</a>
+          <a class="FP" href="#" style="float: right;">forgot Password</a>
         </div>
-        <input type="submit" value="Login" class="form-submit">
+        <div style="margin-top: 20px; text-align: center;" >
+          <a href="#" class="login" onclick="CheckLogin()">
+            Login
+          </a>
+          </div>
     </form>
     <script src="./Admin_Js/Admin_login.js"></script>
 </div>
