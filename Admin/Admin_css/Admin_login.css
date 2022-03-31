@@ -67,8 +67,18 @@ body{
 .form-input::hover{
     border:1px solid #54a0ff;
 }
-a{
+.FB{
     float:right;
     text-decoration: none;
     
+}
+.login:hover{
+    background-color: red;
+    color: #fff;
+}
+.login{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 150px;
 }
