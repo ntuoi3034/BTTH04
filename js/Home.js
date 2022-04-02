@@ -33,7 +33,6 @@ function All(){
     dish_dinner.classList.remove('dish-active')
     dish_dessert.classList.remove('dish-active')
     dish_main.classList.remove('dish-active')
-
     dish_all.classList.add('dish-active')
     /* PROPERTY LI */
 
