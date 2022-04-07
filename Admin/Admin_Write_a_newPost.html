@@ -1,147 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <title>Document</title>
 
 </head>
+
 <body>
-    <!-- header -->
-    <div class="container-fluid header">
-        <div class="row"  style="background-color:darkkhaki;height:60px">
-           <div class="col-3 title">
-            <h1 style="font-size: 40px;
+
+  <!-- header -->
+  <div class="container-fluid header">
+    <div class="row" style="background-color:darkkhaki;height:60px">
+      <div class="col-3 title">
+        <h1 style="font-size: 40px;
             text-align: center;
             margin-bottom: 30px;
             font-family: Brush Script MT;
             padding-top: 10px;">Admin-D'Bento</h1>
-          </div> 
-         <div class="col-1 title" style="padding-top: 20px"> 
-            <a href="#" style="text-decoration: none;color:black">Home</a>
-          </div> 
-          <div class="col-4 title" style="padding-top: 10px"> 
-            <div class="input-group">
-                <input type="search" placeholder="Nhập từ bạn cần tìm?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
-                <div class="input-group-append">
-                  <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
-                </div>
-              </div>
-          </div>
-          <div class="col-4 title" style="padding-top: 10px">
-            <p style="float:right">
-            <button type="button" class="btn btn-primary position-relative">
-                <i class="fa-solid fa-comments"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  99+
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </button>&emsp;
-              <button type="button" class="btn btn-primary position-relative">
-                <i class="fa-solid fa-bell"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  99+
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </button>&emsp;
-              <a href="#" style="text-decoration: none;color:black"><img class="user-img" alt="Bootstrap Image Preview" src="./imagesAdmin/avatar.jpg" style="height:40px;width:40px;border-radius:50%">
-                Nguyễn tươi
-              </a>
-            </p>
+      </div>
+      <div class="col-1 title" style="padding-top: 20px">
+        <a href="#" style="text-decoration: none;color:black">Home</a>
+      </div>
+      <div class="col-4 title" style="padding-top: 10px ; ">
+        <div class="input-group">
+          <input type="search" placeholder="Nhập từ bạn cần tìm?" aria-describedby="button-addon1"
+            class="form-control border-0 bg-light">
+          <div class="input-group-append">
+            <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i
+                class="fa fa-search"></i></button>
           </div>
         </div>
       </div>
-<!-- /header -->
-      <div class="container-fluid">
-        <div class="row" style="color:aliceblue;height:500px">
-<!-- col 1 -->
-          <div class="col-3" style="background-color:rgb(63, 20, 20)">
-            <h2 style="font-size:25px;
+      <div class="col-4 title" style="padding-top: 10px">
+        <p style="float:right">
+          <button type="button" class="btn btn-primary position-relative">
+            <i class="fa-solid fa-comments"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>&emsp;
+          <button type="button" class="btn btn-primary position-relative">
+            <i class="fa-solid fa-bell"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>&emsp;
+          <a href="#" style="text-decoration: none;color:black"><img class="user-img" alt="Bootstrap Image Preview"
+              src="./imagesAdmin/avatar.jpg" style="height:40px;width:40px;border-radius:50%">
+            Nguyễn tươi
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- /header -->
+  <div class="container-fluid">
+    <div class="row" style="color:aliceblue;height:500px ;">
+      <!-- col 1 -->
+      <div class="col-3" style="background-color:rgb(63, 20, 20)">
+        <h2 style="font-size:25px;
             text-align: center;
             margin-bottom: 30px;
             font-family: Lobster;
             padding-top: 20px;">Manage Categories</h2>
-            <p style="text-align:center">-------</p>
-            <p><i class="fa-solid fa-house"></i>&emsp;
-            <a href="./Admin_Home.html" style="text-decoration: none;color:rgb(235, 240, 243);font-size:20px;font-family:Charmonman;">Dashboard</a>
-          </p>
-          <p style="color:aliceblue;font-size:20px;font-family:Charmonman;">
-            <i class="fa-solid fa-book-open"></i>&emsp;Quản lý bài viết
-          </p>
-          
-          <a href="./Admin_AllPost.html" style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman">&emsp;&emsp;Tất cả bài viết</a></br>
-          <a href="./Admin_Write_a_newPost.html" style="text-decoration: none;color:rgb(250, 226, 195);font-size:20px;font-family:Charmonman">&emsp;&emsp;Viết bài mới</a></br>
-          <p style="color:aliceblue;font-size:20px;font-family:Charmonman;">
-            <i class="fa-solid fa-users"></i>&emsp;Quản lý Thành viên
-          </p>
-          
-          <a href="./Admin_MoreMembers.html" style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman">&emsp;&emsp;Thêm thành viên</a></br>
-          <a href="./Admin_AllMembers.html" style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman">&emsp;&emsp;Tất cả thành viên</a></br>
+        <p style="text-align:center">-------</p>
+        <p><i class="fa-solid fa-house"></i>&emsp;
+          <a href="./Admin_Home.html"
+            style="text-decoration: none;color:rgb(235, 240, 243);font-size:20px;font-family:Charmonman;">Dashboard</a>
+        </p>
+        <p style="color:aliceblue;font-size:20px;font-family:Charmonman;">
+          <i class="fa-solid fa-book-open"></i>&emsp;Quản lý bài viết
+        </p>
+
+        <a href="./Admin_AllPost.html"
+          style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman">&emsp;&emsp;Tất cả bài
+          viết</a></br>
+        <a href="./Admin_Write_a_newPost.html"
+          style="text-decoration: none;color:rgb(250, 226, 195);font-size:20px;font-family:Charmonman">&emsp;&emsp;Viết
+          bài mới</a></br>
+        <p style="color:aliceblue;font-size:20px;font-family:Charmonman;">
+          <i class="fa-solid fa-users"></i>&emsp;Quản lý Thành viên
+        </p>
+
+        <a href="./Admin_MoreMembers.html"
+          style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman">&emsp;&emsp;Thêm thành
+          viên</a></br>
+        <a href="./Admin_AllMembers.html"
+          style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman">&emsp;&emsp;Tất cả thành
+          viên</a></br>
         </br>
-          <p>
-            <i class="fa-solid fa-table-tennis-paddle-ball"></i>&emsp;
-            <a href="./Admin_SetTable.html" style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman;">Quản lý đặt bàn online</a>
-          </p>
-          <p>
-            <i class="fa-solid fa-server"></i>&emsp;
-            <a href="#" style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman;">Quản trị sever</a>
-          </p>
-          <p>
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>&emsp;
-            <a href="./Admin_login.html" style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman;">Đăng suất</a>
-          </p>
+        <p>
+          <i class="fa-solid fa-table-tennis-paddle-ball"></i>&emsp;
+          <a href="./Admin_SetTable.html"
+            style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman;">Quản lý đặt bàn
+            online</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-server"></i>&emsp;
+          <a href="#" style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman;">Quản trị
+            sever</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>&emsp;
+          <a href="./Admin_login.html"
+            style="text-decoration: none;color:aliceblue;font-size:20px;font-family:Charmonman;">Đăng suất</a>
+        </p>
+      </div>
+      <!-- col 2 -->
+      <div class="col-9">
+        <!-- header col 2 row1-->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <p style="padding-top: 20px;color:black;font-size: 25px;font-family:Charmonman;">Viết Bài Mới</p>
+            </div>
+            <div class="col">
+              <p>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" style="float:right">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Quản lý bài viết</li>
+                  <li class="breadcrumb-item active" aria-current="page">Viết Bài mới</li>
+                </ol>
+              </nav>
+              </p>
+            </div>
           </div>
-    <!-- col 2 -->
-          <div class="col-9">
-    <!-- header col 2 row1-->
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col">
-                  <p style="padding-top: 20px;color:black;font-size: 25px;font-family:Charmonman;">Viết Bài Mới</p>
+        </div>
+        <!-- body col 2 row2-->
+
+
+        <div class="row" style="color: rgb(73, 73, 73); ">
+          <div class="col-sm-8">
+            <h5>Editor</h5>
+            <h2>Tiêu đề</h2>
+            <div class="col" style="display: flex;">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="border: 1px solid black;">
+                  Times New Roman
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Times New Roman</a></li>
+                  <li><a class="dropdown-item" href="#">Arial</a></li>
+                  <li><a class="dropdown-item" href="#">Calibri</a></li>
+                  <li><a class="dropdown-item" href="#">cursive</a></li>
+                 
+                </ul>
+              </div>
+              <div class="dropdown" style="margin-left: 5px;">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="border: 1px solid black;">
+                  10
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">12</a></li>
+                  <li><a class="dropdown-item" href="#">15</a></li>
+                  <li><a class="dropdown-item" href="#">17</a></li>
+                  <li><a class="dropdown-item" href="#">19</a></li>
+                  <li><a class="dropdown-item" href="#">21</a></li>
+                </ul>
+              </div>
+              <h3 style="font-weight: bold; margin-left: 15px;">B</h3>
+              <h3 style="font-style: italic; margin-left: 15px;">I</h3>
+             
+             <div class="col-icon" style="margin-left: 20px; font-size: 23px;">
+              <i class="fa-solid fa-arrow-rotate-left"></i>
+              <i class="fa-solid fa-arrow-rotate-right" style="margin-left: 10px;"></i>
+              <i class="fa-solid fa-list-ul" style="margin-left: 10px;"></i>
+              <i class="fa-solid fa-list-check" style="margin-left: 10px;"></i>
+              <i class="fa-solid fa-list-ol" style="margin-left: 10px;"></i>
+              <i class="fa-solid fa-align-left" style="margin-left: 10px;"></i>
+              <i class="fa-solid fa-align-justify" style="margin-left: 10px;"></i>
+              <i class="fa-solid fa-align-right" style="margin-left: 10px;"></i>
+              <i class="fa-solid fa-link" style="margin-left: 10px;"></i>
+             </div>
+            </div>
+            <div class="col"  style="height:300px ; border: 1px solid LightGray; ">
+              <h5 style="margin: 12px;">Nội dung bài viết</h5>
+            </div>
+            <div class="col" style="display: flex; border: 1px solid LightGray;">
+              <h7>Số từ: 12/100</h7>
+              <h7 style="margin-left:400px;">Bản nháp được lưu lúc: 09:45:05</h7>
+            </div>
+       
+
+          </div>
+          <div class="col-sm-3" >
+            <div class="col" style="width: 340px; height: 380px; border: 1px solid LightGray; margin-left: 10px;">
+              <div class="col-inner" style=" border: 1px solid LightGray; display: flex;">
+                <h6 style=" padding: 5px;">Ngôn ngữ</h6>
+                <i class="fa-solid fa-angle-up" style="margin-left: 220px; margin-top: 10px;"></i>
+              </div>
+              <h6 style="margin-left: 10px;">Ngôn ngữ của bài viết này</h6>
+              <div class="dropdown" style="margin-left: 10px;" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="border: 1px solid LightGray; font-size: 12px;">
+                  Tiếng Việt
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                
+                  <li><a class="dropdown-item" href="#">Tiếng Anh</a></li>
+                  <li><a class="dropdown-item" href="#">Tiếng Trung</a></li>
+                  <li><a class="dropdown-item" href="#">Tiếng Nhật</a></li>
+                </ul>
+              </div>
+              <h6 style="margin-left: 10px;">Đây là một bản dịch của</h6>
+              <div class="dropdown" style="margin-left: 10px;" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false" style="border: 1px solid LightGray; font-size: 12px;">
+                  --Không chọn--
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                
+                  <li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
+                  <li><a class="dropdown-item" href="#">Tiếng Anh</a></li>
+                  <li><a class="dropdown-item" href="#">Tiếng Trung</a></li>
+                </ul>
+              </div>
+              <h6 style="margin-left: 10px; margin-top: 90px;">Tệp tin muốn đính kèm</h6>
+              <div class="col-inner" style="margin-left: 10px; font-size: 15px;">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Sao chép tập tin media đã được tải lên sang các bản dịch
+                  </label>
                 </div>
-                <div class="col">
-                  <p><nav aria-label="breadcrumb">
-                    <ol class="breadcrumb" style="float:right">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Quản lý bài viết</li>
-                      <li class="breadcrumb-item active" aria-current="page">Viết Bài mới</li>
-                    </ol>
-                  </nav></p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Sao chép hình ảnh đặc trưng sang các bản dịch
+                  </label>
                 </div>
               </div>
             </div>
-<!-- body col 2 row2-->
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="col" style="width: 340px; height: 250px; border: 1px solid LightGray; margin-left: 10px; margin-top: 20px;">
+                  <div class="col-inner" style=" border: 1px solid LightGray; display: flex; margin-bottom: 10px;">
+                    <h6 style=" padding: 5px;">Đăng bài viết</h6>
+                    <i class="fa-solid fa-angle-up" style="margin-left: 200px; margin-top: 10px;"></i>
+                  </div>
+              
+                    <button type="button" class="btn btn-outline-dark" style="font-size: 12px; margin-left: 10px;">Lưu nháp</button>
+                    <button type="button" class="btn btn-outline-dark" style="font-size: 12px; margin-left: 170px;">Xem thử</button>
+                <div class="col-icon">
+                  <i class="fa-solid fa-key" style="padding: 10px;"></i>
+                  <h7>Trạng thái:</h7>
+                  <h7 style="color: #2b2a2a;">Bản nháp</h7>
+                   <a href="#">Chỉnh sửa</a>
+                </div>
+               <div class="col-icon">
+                <i class="fa-solid fa-eye" style="margin-left: 10px;"></i>
+                <h7>Chế độ xem:</h7>
+                <h7 style="color: #2b2a2a;">Công khai</h7>
+                <a href="#">Chỉnh sửa</a>
+               </div>
+               <div class="col-icon">
+                <i class="fa-solid fa-table-list" style="padding: 10px;"></i>
+                <h7>Đăng ngay lập tức </h7>
+                <a href="#">Chỉnh sửa</a>
+               </div>
+              <div class="col-icon" style="border: 1px solid LightGray; margin-top: 20px; height: 50px;">
+                <a href="#" style="color: red; margin-left: 10px; margin-bottom: 60px; ">Bỏ vào thùng rác</a>
+                <button type="button" class="btn btn-primary" style="font-size: 13px; margin-left: 90px; margin-top: 10px;">Đăng bài viết</button>
+           
+              </div>
+            </div>
 
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
-      
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
 </body>
+
 </html>
