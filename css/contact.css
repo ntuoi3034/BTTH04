@@ -83,35 +83,7 @@
     width: 100%;
     height: 600px;
 } 
-.row .col-md-6{
-    width: 30%;
-  padding: 100px;
-    color: #fff;
-}
 .card .card-inner p{
-   color: #FFFFFF;
-   border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
-   margin-top: 30px;
-}
-.col-md-6 h4{
-    font-weight: 600;
-    font-size: 26px;
-}
-.col-md-6 p{
-    color: #FFFFFF !important;
-    text-align: center;
-   margin-left: auto;
-   margin-top: 30px;
-}
-.col-md-6 a{
-   color: #AF872F;
-    font-weight: 700;
-    font-size: 16px;
-}
-.col-12{
-    background-color: #101010;
-}
-.col-12 p {
-   color: #FFFFFF !important;
-   
-}
+    color: #FFFFFF;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+ }
